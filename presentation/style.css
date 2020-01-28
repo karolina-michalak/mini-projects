@@ -1,8 +1,8 @@
 :root{
     --page-1-color: rgb(199, 107, 218);
-    --page-2-color: rgb(189, 90, 209);
+    --page-2-color: rgb(230, 82, 156);
     --page-3-color: rgb(150, 119, 223);
-    --page-4-color: rgb(82, 38, 185);
+    --page-4-color: rgba(106, 67, 197, 0.993);
     --animate-speed: 1s
 }
 
@@ -55,7 +55,7 @@ body{
     display: inline-block;
     padding: 1rem 2rem;
     background: #f4f4f4;
-    color: #0f053185;
+    color: #040035;
     text-decoration: none;
     border: none;
     margin-top: 1rem;
@@ -66,11 +66,11 @@ body{
 
 .btn:hover,
 .btn-dark{
-    background: #0f053185;
+    background: #040035;
     color: #f4f4f4
 }
 
 .btn-dark:hover{
     background: #f4f4f4;
-    color: #0f053185
+    color: #040035
 }
