@@ -113,6 +113,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.4s ease;
 }
 
 .menu-wrap .hamburger > div:before,
@@ -128,4 +129,18 @@ body{
 
 .menu-wrap .hamburger > div:after{
     top: 15px;
+}
+
+.menu-wrap .toggle:checked + .hamburger > div{
+    transform: rotate(135deg)
+}
+
+.menu-wrap .toggle:checked + .hamburger > div:before,
+.menu-wrap .toggle:checked + .hamburger > div:after{
+    top: 0;
+    transform: rotate(90deg)
+}
+
+.menu-wrap .toggle:checked:hover + .hamburger > div{
+    transform: rotate(225deg)
 }
