@@ -1,6 +1,6 @@
 :root{
-    --page-1-color: rgb(212, 0, 255);
-    --page-2-color: rgb(215, 126, 233);
+    --page-1-color: rgb(199, 107, 218);
+    --page-2-color: rgb(189, 90, 209);
     --page-3-color: rgb(150, 119, 223);
     --page-4-color: rgb(82, 38, 185);
     --animate-speed: 1s
@@ -29,4 +29,48 @@ body{
 
 #page4{
     background: var(--page-4-color);
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.page h1{
+    font-size: 5rem;
+    line-height: 1.2;
+    margin: 1 rem
+}
+
+.page p{
+    font-size: 2rem
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #f4f4f4;
+    color: #0f053185;
+    text-decoration: none;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark{
+    background: #0f053185;
+    color: #f4f4f4
+}
+
+.btn-dark:hover{
+    background: #f4f4f4;
+    color: #0f053185
 }
