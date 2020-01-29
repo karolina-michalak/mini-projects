@@ -54,15 +54,19 @@ h1{
     width: 400px;
     padding: 1rem;
     background: var(--secondary-color);
-    transition: all 0.5s ease-in-out
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
 }
 
 #timeline ul li:nth-child(odd) div{
     left: 40px;
+    transform: translate(200px, 0);
 }
 
 #timeline ul li:nth-child(even) div{
     left: -434px;
+    transform: translate(-200px, 0);
 }
 
 #timeline ul li:after{
@@ -99,6 +103,12 @@ h1{
     border-color: transparent transparent transparent var(--secondary-color);  
 }
 
+#timeline ul li.show div{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
 @media(max-width: 900px){
     #timeline ul li div{
         width: 250px;
@@ -126,6 +136,5 @@ h1{
         left: -15px;
         border-width: 8px 16px 8px 0;
         border-color: transparent var(--secondary-color) transparent transparent;
-    }
-    
+    } 
 }
