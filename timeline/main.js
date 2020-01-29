@@ -19,3 +19,4 @@ const run = () =>
 
 window.addEventListener('load', run)
 window.addEventListener('resize', run)
+window.addEventListener('scroll', run)
