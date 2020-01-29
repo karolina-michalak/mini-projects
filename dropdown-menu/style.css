@@ -88,5 +88,20 @@ body{
     text-align: center;
     padding: 0 2rem;
     background: rgb(80, 112, 255);
-    color: white
+    color: white;
+}
+
+#showcase h1{
+    font-size: 5rem
+}
+
+@media(max-width: 600px){
+    #navbar ul li{
+        display: block;
+    }
+
+    #navbar ul li:hover ul{
+        width: 100%;
+        position: relative
+    }
 }
